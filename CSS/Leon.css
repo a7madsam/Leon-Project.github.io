@@ -217,10 +217,18 @@ body {
   display: flex;
   margin-bottom: 40px;
 }
-@media (max-width: 767px) {
+.all-services .col .serv > * {
+  min-height: 200px;
+  max-height: 200px;
+}
+@media (max-width: 674px) {
   .all-services .col .serv {
-    flex-direction: column;
+    flex-flow: column wrap;
     text-align: center;
+  }
+  .all-services .col .serv > * {
+    min-height: auto;
+    max-height: auto;
   }
 }
 .all-services .col .serv i {
@@ -255,7 +263,7 @@ body {
   top: -50px;
   z-index: -1;
 }
-@media (max-width: 1199px) {
+@media (max-width: 1399px) {
   .paint-col {
     display: none;
   }
